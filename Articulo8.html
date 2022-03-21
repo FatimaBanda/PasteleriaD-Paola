@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>formularios</title>
+</head>
+<body  bgcolor="f5dbf1">
+ <form NAME="Comentario" ID="com1" METHOD="post" action ="hola.html">
+     
+	 <!---Se crea una tabla y se centra-->
+	 <center>
+	 <table border="1">
+		 <!---Instruccion para poder esribir el nombre-->
+	    <tr> 
+		<td> Nombre: </td>
+		<td> <input type="text" cols="15" name="nombre" value=" "></td>
+		</tr>
+		
+        
+		<tr> 
+		<td> Elige el tamaño: </td>
+		<td> 
+		<input type="radio" name="Tamaño" value="Chico"> chico 
+		<input type="radio" name="Tamaño" value="Mediano"> mediano
+		<input type="radio" name="Tamaño" value="Grande"> grande
+		</td>
+		</tr>
+		<!---Se insterta el texto que contendra el menu de ocpiones-->
+		<tr>
+			<td>Sabor: </td>
+			<td><select name="Menu" id="Menu" size="1">
+					<option name ="Fresas con crema" >Fresas con crema </option>
+					<option name="Chocolate"> Chocolate</option>
+					<option name ="Cajeta">Cajeta</option>
+					<option name ="Zarzamora">Zarzamora</option>
+					<option name ="Vainilla con chocolate">Vainilla con chocolate</option>
+					<option name ="Nuez">Nuez</option>
+			    </select>
+			</td>
+		</tr>
+		
+		<!---Instrucción para que el usuario pueda subir un archivo-->
+		<tr>
+			<td>Archivo 
+				<br>(agrega una foto si 
+				quieres algun diseño en especial)</br>
+			</td> 
+			<td><input TYPE="file" name="archivo" id="archivo" > </td>
+			<td> </td>
+		</tr>
+		
+		<!---Instrucción para que el usuario pueda ingresar la dirección-->
+		<tr> 
+			<td> Ingresa la dirección: </td>
+			<td> <input type="text" cols="20" name="apellido" value=" "></td>
+		</tr>
+        <!---Instrucción para que el usuario pueda ingresar algún comentario-->
+		<tr> 
+			<td>Comentario: 
+				<br>(Agrega si quieres un mensaje especial en el pastel)</br>
+			</td>
+		<td> <textarea name="comentario" cols ="20" rows="4"> </textarea></td>
+		</tr>
+		
+		<!---Botones para enviar y limpiar los datos-->
+	 </table>
+		<input  type ="submit" name="enviar" value="Enviar">
+	 <input type="reset" name="borrar" value="Limpiar">
+	 </center>
+ </form> 
+</body>
+</html>

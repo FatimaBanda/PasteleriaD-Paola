@@ -1,0 +1,62 @@
+  /*No haya margen y quede pegado esta arriba*/
+  *{
+  margin:0;
+  padding:0;
+  }
+  
+  body{    /*Tipo y tamaño de la letra*/
+            margin: 0;
+            font-family: 'Open sans';
+            font-size: 16px;
+        }
+		
+        .menu-wrapper ul{
+            padding: 0;
+            list-style: none;
+
+        }
+
+        .principal-menu > li {
+            display: inline-block;
+        }
+
+        .principal-menu > li > a{
+            display: block;
+            padding: 15px 4px;
+            width: 95px;
+        }
+
+        li ul{
+            position: absolute;
+            display: none;
+        }
+
+        .sub-menu a {
+            display: block;
+            padding: 10px 5px;
+            width: 120px;
+        }
+
+        li:hover ul{
+            display: block;
+        }
+
+        .menu-wrapper, li ul{
+            background: rgb(252, 189, 238);
+        } 
+
+        .principal-menu {
+            width: 550px;
+            margin: 0 auto;
+        }
+
+        .principal-menu a {
+            color: rgb(10, 10, 10);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .principal-menu li:hover{
+            background: #c939b1;
+            text-shadow: 0 0 2px rgb(235, 158, 205);
+        }
